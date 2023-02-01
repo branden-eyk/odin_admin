@@ -34,18 +34,26 @@ body{
     background-position: center center;
 }
 
-.sidebar__text{
+.sidebar__item{
     font-family: Roboto;
     color: white;
     display: flex;
+    align-items: center;
+}
+
+.sidebar__item:hover{
+    cursor: pointer;
 }
 
 .sidebar__header{
     font-size: 1.5rem;
+    margin: 35px 0 50px 0;
 }
 
 .sidebar__items{
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 45px);
 }
 
 .sidebar__icon{
@@ -59,4 +67,23 @@ body{
     height: 50px;
     width: auto;
     margin-right: 15px;
+}
+
+.content{
+    position: relative;
+}
+
+.img-attribution{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: white;
+    opacity: 0.6;
+    font-family: Roboto;
+    font-size: 0.8rem;
+}
+
+.img-attribution a{
+    text-decoration: none;
+    color: white;
 }
