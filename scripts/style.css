@@ -1,23 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body{
     margin: 0;
 }
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 250px 5fr;
     grid-template-rows: 15vh 85vh;
 }
 
 .header{
     position: relative;
-    box-shadow: 1px 0px 5px rgb(41, 41, 41);
+    z-index: 1;
+    box-shadow: 3px 0px 10px #ff432a;
+    background-color: #c90064;
 }
 
 .sidebar{
-    background-color: #4338ca;
+    position: relative;
+    z-index: 0;
+    box-shadow: 1px 0px 10px #8037f5;
+    background-color: #5925ac;
     grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content{
-    background-color: rgb(203, 203, 203);
+    background-image: url("../assets/91655.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.sidebar__text{
+    font-family: Roboto;
+    color: white;
+    display: flex;
+}
+
+.sidebar__header{
+    font-size: 1.5rem;
+}
+
+.sidebar__items{
+    
+}
+
+.sidebar__icon{
+    filter: invert(100%) sepia(99%) saturate(301%) hue-rotate(147deg) brightness(104%) contrast(115%);
+    height: 25px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.sidebar__icon--bigger{
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
 }
