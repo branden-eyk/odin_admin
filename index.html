@@ -10,9 +10,31 @@
 <body>
     <div class="container">
         <div class="header">
+            <div class="header__searchDiv">
+                <img src="./assets/magnify.svg" class="header__icon search__icon" alt="search">
+                <input type="search" class="header__search" name="search">
+            </div>
+            <div class="header__userDiv">
+                <img src="./assets/bell-ring-outline.svg" class="header__icon bell__icon" alt="notifications">
+                <!--<img src="https://picsum.photos/90" alt="Placeholder User Image" class="header__userIcon--small">-->
+                <img src="./assets/4593091_std.jpg" alt="user image" class="header__userIcon header__userIcon--small">
+                <span class="header__smallName">Steve Castle</span>
+            </div>
+            <div class="header__messageDiv">
+                <img src="./assets/4593091_std.jpg" alt="user image" class="header__userIcon header__userIcon--large">
+                <div class="header__message">
+                    <p class="header__hello">Hi there,</p>
+                    <p class="header__largeName">Steve Castle (@ThatGuy)</p>
+                </div>
+            </div>
+            <div class="header__buttonsDiv">
+                <button class="header__button">New</button>
+                <button class="header__button">Upload</button>
+                <button class="header__button">Share</button>
+            </div>
         </div>
         <div class="sidebar">
-            <span class="sidebar__item sidebar__header"><img src="../assets/view-dashboard.svg" class="sidebar__icon sidebar__icon--bigger">Dashboard</span>
+            <span class="sidebar__item sidebar__header"><img src="./assets/view-dashboard.svg" class="sidebar__icon sidebar__icon--bigger">Dashboard</span>
             <div class="sidebar__items">
                 <span class="sidebar__item"><img src="./assets/home.svg" class="sidebar__icon">Home</span>
                 <span class="sidebar__item"><img src="./assets/card-account-details.svg" class="sidebar__icon">Profile</span>

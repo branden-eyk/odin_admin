@@ -15,6 +15,131 @@ body{
     z-index: 1;
     box-shadow: 3px 0px 10px #ff432a;
     background-color: #c90064;
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    color: white;
+    font-family: Roboto;
+    padding: 10px 60px 10px 30px;
+}
+
+.header__icon{
+    height: 25px;
+    width: auto;
+    filter: invert(100%) sepia(99%) saturate(301%) hue-rotate(147deg) brightness(104%) contrast(115%);
+}
+
+.header__icon:hover{
+    cursor: pointer;
+    filter: invert(61%) sepia(64%) saturate(609%) hue-rotate(333deg) brightness(107%) contrast(92%); 
+}
+
+.search__icon{
+    margin-right: 10px;
+}
+
+.header__search{
+    border-radius: 15px;
+    border: none;
+    height: 1.7rem;
+    padding: 0 10px 0 10px;
+    background-color: rgb(36, 45, 109);
+    color: white;
+    font-family: Roboto;
+    width: 90%;
+    box-shadow: 0.5px 0.5px 2px #000000;
+}
+
+.header__search:focus{
+    outline: none;
+    box-shadow: 3px 3px 10px #000000;
+}
+
+.header__searchDiv{
+    display: flex;
+    align-items: center;
+}
+
+.header__userDiv{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header__userIcon{
+    border-radius: 150px;
+    box-shadow: 0.5px 1px 4px #000000;
+}
+
+.header__userIcon--small{
+    height: 50px;
+    width: auto;
+    margin-right: 22px;
+}
+
+.bell__icon{
+    margin-right: 22px;
+}
+
+.header__smallName{
+    font-weight: bolder;
+}
+
+.header__messageDiv{
+    display: flex;
+    align-items: center;
+}
+
+.header__messageDiv p{
+    margin: 0;
+}
+
+.header__userIcon--large{
+    height: 75px;
+    width: auto;
+    margin-right: 20px;
+}
+
+.header__userIcon:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 20px #f59847;
+}
+
+.header__hello{
+    font-size: 0.8rem;
+}
+
+.header__largeName{
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.header__largeName:hover, 
+.header__smallName:hover{
+    cursor: pointer;
+    color:#f59847;
+}
+
+.header__buttonsDiv{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.header__button{
+    background-color: #5925ac;
+    color: white;
+    font-family: Roboto;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    width: 100px;
+    margin-left: 25px;
+}
+
+.header__button:hover{
+    cursor: pointer;
+    background-color: #431d80;
+    color: #f59847;
 }
 
 .sidebar{
