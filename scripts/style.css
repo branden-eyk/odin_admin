@@ -7,7 +7,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 250px 5fr;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 1fr 4.71fr;
 }
 
 .header{
@@ -28,7 +28,8 @@ body{
     filter: invert(100%) sepia(99%) saturate(301%) hue-rotate(147deg) brightness(104%) contrast(115%);
 }
 
-.header__icon:hover{
+.header__icon:hover,
+.project__icon:hover{
     cursor: pointer;
     filter: invert(61%) sepia(64%) saturate(609%) hue-rotate(333deg) brightness(107%) contrast(92%); 
 }
@@ -212,12 +213,13 @@ body{
     background-size: cover;
     background-position: center center;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding: 5px 10px 0px 15px;
+    padding: 5px 10px 20px 20px;
+    gap: 20px 20px;
 }
 
-.content h3{
+.content__header{
     color: white;
     font-family: Roboto;
     font-size: 1rem;
@@ -225,6 +227,42 @@ body{
 
 .content__projects{
     grid-row: 1/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr 1fr 1fr;
+    gap: 20px 20px;
+    padding: 0 20px 0 20px;
+}
+
+.projects__header{
+    grid-column: 1/3;
+}
+
+.content__project{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    border-left: 10px solid #f59847;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project__blurb{
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+
+.project__icons{
+    display: flex;
+    justify-content: end;
+}
+
+.project__icon{
+    margin-left: 10px;
+    height: 25px;
+    width: auto;
 }
 
 .img-attribution a{
