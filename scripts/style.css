@@ -153,12 +153,6 @@ body{
     align-items: center;
 }
 
-.content{
-    background-image: url("../assets/91655.jpg");
-    background-size: cover;
-    background-position: center center;
-}
-
 .sidebar__item{
     font-family: Roboto;
     color: white;
@@ -211,6 +205,26 @@ body{
     opacity: 0.6;
     font-family: Roboto;
     font-size: 0.8rem;
+}
+
+.content{
+    background-image: url("../assets/91655.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 5px 10px 0px 15px;
+}
+
+.content h3{
+    color: white;
+    font-family: Roboto;
+    font-size: 1rem;
+}
+
+.content__projects{
+    grid-row: 1/3;
 }
 
 .img-attribution a{
